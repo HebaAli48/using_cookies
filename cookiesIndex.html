@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maleImage {
+            width: 150px;
+        }
+
+        .femaleImage {
+            width: 165px;
+        }
+
+        .sbtBtn {
+            margin-top: 50px;
+            margin-left: 80px;
+        }
+
+        table {
+            border: 1px solid;
+            line-height: 30px;
+            padding: 30px 50px 50px 50px;
+            margin: auto;
+            margin-top: 10vh;
+        }
+
+        .chosen {
+            margin-left: 60px;
+            font-size: 14px;
+            /* padding: 20px; */
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <form class="form1" onsubmit="onSubmited(this,event)">
+                <tr>
+                    <td>
+                        <label> Enter your Name:</label>
+                    </td>
+                    <td>
+                        <input id="username" type="text" required name="userName">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label> Enter your Age:</label>
+                    </td>
+                    <td>
+                        <input id="userage" type="text" name="userAge" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Select your Gender:</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img class="maleImage" src="./male2.jpg" alt="male"><br>
+                        <div class="chosen">
+                            <label>Male</label>
+                            <input class="genderType" type="radio" id="malegender" name="gender" value="male" required>
+
+                        </div>
+                    </td>
+                    <td>
+                        <img class="femaleImage" src="./female2.jpg" alt="female"><br>
+                        <div class="chosen">
+                            <label>Female</label>
+                            <input class="genderType" type="radio" name="gender" value="female" required>
+
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Select your color:</label>
+                    </td>
+                    <td>
+                        <select id="colors" name="colors" required>
+                            <option value="black">Black</option>
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="blue">Blue</option>
+                            <option value="palevioletred">pink</option>
+                            <option value="purple">purple</option>
+                            <option value="orange">orange</option>
+                            <option value="aqua">aqua</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input class="sbtBtn" type="submit" value="Register">
+                    </td>
+                </tr>
+            </form>
+        </tbody>
+    </table>
+    <script type="module" src="./cookiesscript.js"></script>
+</body>
+
+</html>
